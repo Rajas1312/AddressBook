@@ -8,13 +8,20 @@ public class AddressBook {
 
 	public static void main(String[] args) {
 	
+		Scanner r =new Scanner(System.in);
 		ArrayList<String> address=new ArrayList<String>();
-		address.add("Rajas");
-		address.add("Dongre");
-		address.add("Mumbai");
-		address.add("Maharshtra");
-		address.add("India");
-		address.add("400092");
+		System.out.println("Enter 1st name");
+		address.add(r.nextLine());
+		System.out.println("Enter last name");
+		address.add(r.nextLine());
+		System.out.println("Enter city");
+		address.add(r.nextLine());
+		System.out.println("Enter state");
+		address.add(r.nextLine());
+		System.out.println("Enter Country");
+		address.add(r.nextLine());
+		System.out.println("Enter Zipcode");
+		address.add(r.nextLine());
 		System.out.println("The orignal address book is");
 		System.out.println(address);
 
@@ -24,14 +31,18 @@ public class AddressBook {
 
 		case 1:
 			System.out.println("1.Changing the person");
-			address.set(0,"Ramesh");
+			System.out.println("Change 1st name");
+			address.set(0,r.nextLine());
 			System.out.println(address);
 			break;
 		case 2:
 			System.out.println("2.Editing Address info");
-			address.set(2,"pune");
-			address.set(3,"Mahrastra");
-			address.set(5,"300081");
+			System.out.println("Change city");
+			address.set(2,r.nextLine());
+			System.out.println("Change State");
+			address.set(3,r.nextLine());
+			System.out.println("Change Zipcode");
+			address.set(5,r.nextLine());
 			System.out.println(address);
 			break;
 		case 3:
